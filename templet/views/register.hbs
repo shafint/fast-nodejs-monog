@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    
+<section>
+<section class="login-register">
+    <div class="form_main">
+        <div class="sideber">
+            <div class="icon">
+                <i class="fas fa-mars-stroke-v"></i>
+            </div>
+            <h2>Welcome</h2>
+            <p>To the complete MERN <br/>Backend course</p>
+            <div class="login_btn">
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="p_from">
+        <form action="/register" method="POST" class="form_core">
+            <!--btn start-->
+            <div class="rg_lg_btn">
+                <div class="twobtn">
+                    <button class="reg">
+                    <a href="/register">Registasion</a></button>
+                    
+                    <button>
+                    <a href="/">Login
+                    </a></button>
+                </div>
+            </div>
+
+            <!--end btn-->
+        <h1>Employee Registation Form</h1>
+
+            <div class="main_Inpt_db">
+                
+            <!--form start-->
+            <div class="fast_cal_form">
+                <input type="text" name="fname" autocomplete="off" placeholder="First Name*">
+                <input type="email" name="email" autocomplete="off" placeholder="Your Email*">
+                <input type="number" name="phone" autocomplete="off" placeholder="Your Phone*">
+                <input type="password" name="password" autocomplete="off" placeholder="Password*">
+            </div>
+                <!--2nd-->
+            <div class="sceond_cal_form">
+                <input type="text" name="lname" autocomplete="off" placeholder="Last Name*">
+                <div class="gender">
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="femail" value="femail">
+                <label for="femail">Femail</label>
+                </div>
+                <input type="number" name="age" autocomplete="off" placeholder="Enter Your Age*">
+                <input type="password" name="cpassword" autocomplete="off" placeholder="Confirm Password*">
+            </div>
+            </div>
+
+            <!--end form-->
+            <div class="submit">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+{{>footer}}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+button{
+    z-index: 1000;
+}
+.header_nav{
+    background-color: blueviolet;
+}
+.container{
+    background-color: transparent;
+}
+.menu_group li a{
+    color:#fff!important;
+}
+.logo_test{
+    color: #fff!important;
+    font-weight: 500;
+
+}
+.footer{
+    background-color: crimson;
+    padding:20px 0px;
+    margin-top: auto;
+}
+.footer p{
+    line-height: 20px;
+    color:#fff;
+    font-weight: 400;
+    margin:0;
+    text-align: center;
+    padding: 0;
+}
+.home{
+    height: 82vh;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home h1{
+    font-size: 50px;
+    color:#fff;
+}
+.login-register{
+
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form_main{
+    width: 70vw;
+    height: 70vh;
+    background:linear-gradient(90deg, blue,65%,skyblue);
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar{
+    width: 25%;
+}
+.p_from{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+    padding-right: 20px;
+}
+.form_core{
+    height: 90%;
+    width: 90%;
+    position: relative;
+    background-color: #f1f1f1;
+    z-index: 200;
+}
+.form_core::before{
+    content:"";
+    top:0px;
+    left:-60px;
+    position: absolute;
+    width:20%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-radius: 100%;
+    display: block;
+    z-index: -1;
+}
+.icon {
+    font-size: 37px;
+    color: #fff;
+    height: 66px;
+    transition: 0.5s;
+    position: relative;
+}
+.icon i{
+    animation: con;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes con {
+    0%{
+        margin-top:20px
+    }
+    50%{
+        margin-top:0px
+    }100%{
+        margin-top:20px
+    }
+}
+.sideber {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0px 16px;
+    width: 20%;
+    justify-content: center
+}
+
+.sideber h2 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.sideber p {
+    font-size: 12px;
+    color: #fff;
+}
+.login_btn button{
+    width: 100px;
+    margin-top:  25px;
+    outline: none;
+    border:none;
+    color:blue;
+    background:#fff;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.rg_lg_btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.twobtn {
+    width: 170px;
+    display: flex;
+    background: blue;
+    border-radius: 32px;
+    margin-right: 10px;
+    padding:5px ;
+}
+
+.twobtn button {
+    width: 50%;
+    font-size: 12px;
+    padding:5px 5px;
+    background:transparent;
+    border:none;
+    border-radius: 30px;
+    color:#fff;
+    padding:5px;
+    outline: none;
+}
+
+.twobtn button a{
+    color:#fff;
+    text-decoration: none;
+}
+.reg{
+    background-color:#fff!important;
+}
+.reg a{
+    color: blue !important;
+    font-weight: 500;
+}
+form.form_core h1 {
+    font-size: 25px;
+    color: #611488bf;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom:10px
+}
+.main_Inpt_db {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fast_cal_form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 172px;
+    padding-left: 47px;
+}
+.sceond_cal_form{
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 172px;
+    padding-left: 47px;
+}
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit button {
+    margin-right: 85px;
+    margin-top: 26px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    padding: 7px;
+    background: #3232d4;
+    border-radius: 20px;
+    outline: none;
+}
+.fast_cal_form input {
+    padding-left: 10px;
+}
+.sceond_cal_form input {
+    padding-left: 10px;
+}
+.Login_from {
+    display: flex;
+    flex-direction: column;}
+
+@media(max-width:1100px) {
+    .form_main{
+        flex-flow: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+    }
+    .main_Inpt_db {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-flow: column wrap;
+    }
+    .sideber {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 25px;
+        padding-top:70px ;
+    }
+    .login_btn{
+        margin-top:-25px;
+    }
+    .p_from {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .p_from{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-right: 0px;
+    }
+    .form_core {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: #f1f1f1;
+        z-index: 200;
+        padding-bottom: 15px;
+    }
+    .icon{
+        padding-top:15px;
+
+    }
+    .form_core::before {
+        display: none;
+    }
+    .rg_lg_btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .fast_cal_form {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        height: 172px;
+        padding-left: 0px;
+        margin-bottom: 5px;
+    }
+    .sceond_cal_form {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        height: 172px;
+        padding-left: 0px;
+    }
+    .submit {
+        display: flex;
+        justify-content: center;
+    }
+    .submit button {
+        margin-right: 0px;
+        margin-top: 10px;
+        width: 100px;
+        border: none;
+        color: #fff;
+        padding: 7px;
+        background: #3232d4;
+        border-radius: 20px;
+        outline: none;
+    }
+    .login-register {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:100px;
+    }
+    .footer {
+        background-color: #ed143d;
+        padding: 20px 0px;
+        margin-top: auto;
+
+    }
+}
